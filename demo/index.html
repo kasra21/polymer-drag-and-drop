@@ -13,6 +13,29 @@
 
     <custom-style>
       <style is="custom-style" include="demo-pages-shared-styles">
+        #drags > div {
+          text-align: center;
+          float: left;
+          padding: 1em;
+          margin: 0 1em 1em 0;
+          box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+          border-radius: 100px;
+          border: 2px solid #ececec;
+          background: #F7F7F7;
+          transition: all .5s ease;
+        }
+        #drops > div {
+          transition: all .5s;
+          text-align: center;
+          float: left;
+          padding: 1em;
+          margin: 0 1em 1em 0;
+          box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+          border-radius: 5px;
+          border: 2px solid skyblue;
+          background: #F7F7F7;
+          transition: all .5s ease;
+        }
       </style>
     </custom-style>
   </head>
@@ -21,28 +44,16 @@
       <h3>polymer-drag-and-drop demo</h3>
       <demo-snippet>
         <template>
-          <polymer-drag-and-drop containerSelector="div#drags">
-            <div id="drags">
-              <div class="column">
-                  <p>item-1</p>
-              </div>
-              <div class="column">
-                  <p>item-2</p>
-              </div>
-              <div class="column">
-                  <p>item-3</p>
-              </div>
+          <polymer-drag-and-drop>
+            <div id="drags" class="drag-container">
+              <div class="element">item-1</div>
+              <div class="element">item-2</div>
+              <div class="element">item-3</div>
             </div>
-            <div id="drops">
-              <div class="column">
-                  <p>item-A</p>
-              </div>
-              <div class="column">
-                  <p>item-B</p>
-              </div>
-              <div class="column">
-                  <p>item-C</p>
-              </div>
+            <div id="drops" class="drop-container">
+              <div class="element">item-A</div>
+              <div class="element">item-B</div>
+              <div class="element">item-C</div>
             </div>
           </polymer-drag-and-drop>
         </template>
