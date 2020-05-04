@@ -1,6 +1,6 @@
 # \<polymer-drag-and-drop\>
 
-
+Quick and simple element using Dragula (https://bevacqua.github.io/dragula/) library. Only very basics usage is supported here. Not yet any bniding whatsoever.
 
 ## Install the Polymer-CLI
 
@@ -8,11 +8,21 @@ First, make sure you have the [Polymer CLI](https://www.npmjs.com/package/polyme
 
 ## Viewing Your Element
 
+You can view the demo of the element on polymer-drag-and-drop/demo/index.html
+
 ```
-$ polymer serve
+$ polymer serve --open
+```
+
+DOn't forget installing the dependancies:
+
+```
+$ npm install
 ```
 
 ## Running Tests
+
+Currently there are no tests
 
 ```
 $ polymer test
