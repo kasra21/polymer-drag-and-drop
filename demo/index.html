@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>polymer-drag-and-drop demo</title>
+
+    <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+    <script type="module">import '@polymer/iron-demo-helpers/demo-pages-shared-styles';</script>
+    <script type="module">import '@polymer/iron-demo-helpers/demo-snippet';</script>
+    <script type="module" src="../polymer-drag-and-drop.js"></script>
+
+    <custom-style>
+      <style is="custom-style" include="demo-pages-shared-styles">
+      </style>
+    </custom-style>
+  </head>
+  <body>
+    <div class="vertical-section-container centered">
+      <h3>polymer-drag-and-drop demo</h3>
+      <demo-snippet>
+        <template>
+          <polymer-drag-and-drop containerSelector="div#drags">
+            <div id="drags">
+              <div class="column">
+                  <p>item-1</p>
+              </div>
+              <div class="column">
+                  <p>item-2</p>
+              </div>
+              <div class="column">
+                  <p>item-3</p>
+              </div>
+            </div>
+            <div id="drops">
+              <div class="column">
+                  <p>item-A</p>
+              </div>
+              <div class="column">
+                  <p>item-B</p>
+              </div>
+              <div class="column">
+                  <p>item-C</p>
+              </div>
+            </div>
+          </polymer-drag-and-drop>
+        </template>
+      </demo-snippet>
+    </div>
+  </body>
+</html>
